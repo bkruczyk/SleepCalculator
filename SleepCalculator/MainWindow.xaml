@@ -1,0 +1,31 @@
+﻿<Window x:Class="SleepCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="453" Width="563">
+    
+    <Grid>
+        <TextBox Height="58" 
+                 Margin="149,63,154,0" 
+                 Name="wakeUpTime" 
+                 VerticalAlignment="Top" 
+                 FontSize="40" 
+                 TextAlignment="Center" 
+                 Text="{Binding Path=WakeUpTime, UpdateSourceTrigger=PropertyChanged}" />
+        <Label Height="45" 
+               Margin="137,12,131,0" 
+               Name="label1" 
+               VerticalAlignment="Top" 
+               Content=" I have to wake up at" 
+               FontSize="26" />
+        <Label Content="It's best to go to sleep at" 
+               FontSize="26" 
+               Height="45" 
+               Margin="120,159,118,0" 
+               Name="label3" 
+               VerticalAlignment="Top" />
+        <Label Height="71" Margin="197,220,193,0" 
+               Name="label2" 
+               VerticalAlignment="Top" 
+               FontSize="48" Content="{Binding Path=GoSleepTime}"/>
+    </Grid>
+</Window>
