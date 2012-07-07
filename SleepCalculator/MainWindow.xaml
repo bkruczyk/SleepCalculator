@@ -16,16 +16,17 @@
                Name="label1" 
                VerticalAlignment="Top" 
                Content=" I have to wake up at" 
-               FontSize="26" />
+               FontSize="26" HorizontalContentAlignment="Center" />
         <Label Content="It's best to go to sleep at" 
                FontSize="26" 
                Height="45" 
                Margin="120,159,118,0" 
                Name="label3" 
-               VerticalAlignment="Top" />
-        <Label Height="71" Margin="197,220,193,0" 
+               VerticalAlignment="Top" HorizontalContentAlignment="Center" />
+        <Label Height="71" Margin="40,210,26,0" 
                Name="label2" 
                VerticalAlignment="Top" 
-               FontSize="48" Content="{Binding Path=GoSleepTime}"/>
+               FontSize="48" Content="{Binding Path=GoSleepTime}" HorizontalContentAlignment="Center" />
+        <TextBlock Height="22" HorizontalAlignment="Left" Margin="107,315,0,0" Name="textBlock1" Text="According that well slept night takes about five 1,5h sleep cycles." VerticalAlignment="Top" Width="344" />
     </Grid>
 </Window>
